@@ -10,8 +10,6 @@ AStarGraph::AStarGraph(Maze maze, Vector2i startIndex, Vector2i targetIndex) {
     this->target = targetIndex;
 
     this->generateNode(this->start, NULL);
-
-    cout << "this runs too?" << endl;
 };
 
 vector<Vector2i> AStarGraph::generateConnections(Vector2i cellIndex) {

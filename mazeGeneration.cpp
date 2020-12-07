@@ -33,9 +33,6 @@ int main(int argc, char *argv[]) {
     int numCols =  canvasWidth/w - 2;
     int numRows = canvasHeight/h - 2;
 
-    cout << "cols, rows " << numCols << ", " << numRows << endl;
-    cout << "w, h " << w << ", " << h << endl;
-
     Maze maze(w, h, numCols, numRows);
     maze.generateMaze(Vector2i(0,0));
 
@@ -110,8 +107,6 @@ int main(int argc, char *argv[]) {
 
     reverse(path.begin(), path.end());
     path.push_back(Vector2i(numCols-1, numRows));
-
-    cout << numRows << numCols << endl;
     
 
     Color lineColour(100,255,255);
